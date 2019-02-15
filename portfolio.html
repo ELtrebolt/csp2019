@@ -1,21 +1,63 @@
+<!DOCTYPE html>
 <html lang="en">
-	  <head>
-	    <meta charset="utf-8">
-	    <title>Portfolio</title>
-	    <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="about.html">AboutMe</a>
-	  </head>
-    <body style='background-color:54AAFF;'>
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <style>
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:#2764FF;
+        }
+   
+    li {
+      float: left;
+      border-right:1px solid #000000;
+        }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: all 0.5s ease;
+          }
+    
+    li a:hover:not(.active) {
+      background-color: #3F27FF;
+          }
+    
+    h1{
+    color:#000000;
+    text-align:center;
+      }
+
+    </style>
+    </head>
+
+      <style>
+        body { background-color: #C9EEFF; }
+      </style>
+        
+      <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="portfolio.html">Portfolio</a></li>
+       <li><a href="aboutme.html">AboutMe</a></li>
+      </ul>
+          
       <h1>This is my Portfolio Page!</h1>
-      <img src="images/portfolio.jpg" height="250">
       <hr>
-      <h2>Click on the lottery image to play my Scratch game!</h1>
-      <br>
+      <h2>Click on the lottery image to play my Scratch game!</h2>
       <a target="_blank" href="https://scratch.mit.edu/projects/18665053/">
-        <img src="images/lottery.jpg" height="200">
+     <img id="lottery" src="images/lottery.jpg" height="250">
       </a>
-      <br>
-     <hr>
-	  </body>
-	</html>
+      <hr>
+      <a target="_blank" href="https://scratch.mit.edu/projects/287006567/">
+      <img id="arcade" src="images/arcade.png" height="250">
+      </a>
+    </body>
+</html>
